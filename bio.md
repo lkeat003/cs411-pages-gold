@@ -11,9 +11,9 @@ An expierenced frontend and backend developer with a passion for coding.
 Bio goes here.
 
 ### Gabby Ramirez
-![Image 3](image3-url-here)
+![Image 3](https://github.com/lkeat003/cs410-pages-gold/assets/92652332/e39d2314-6dd3-4a36-b2e8-98d05701ea03)
 
-Bio goes here.
+Gabby Ramirez is a second-degree seeking student.  She earned her first degree in Psychology at the College of William & Mary.  She has interned as a Computer Scientist with the government and has worked in the automotive industry for seven years.  Upon graduation, Gabby hopes to make a career change soon after.  When she has time, her hobbies include playing video games, building and painting models, and spending time with her fur babies and husband.
 
 ### Kyle Munoz
 ![Image 4](image4-url-here)
