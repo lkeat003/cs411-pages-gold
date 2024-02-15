@@ -6,48 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Section</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
     <div class="main-container">
         <h2>Meet the Team</h2>
         <hr>
         <div class="members">
-            <div class="team-member">
+            <div class="team-member" onclick="showPopup('Steven Chen', 'Frontend and Backend Developer', 'Computer Science', '22', 'Table Tennis, Video Games', 'Old Dominion University')">
                 <img src="images/StevenChen.jpg">
                 <h4>Steven Chen</h4>
                 <p>Frontend and Backend Developer</p>
             </div>
-            <div class="team-member">
-                <img src="./images/lauren.png">
+            <div class="team-member" onclick="showPopup('Name', 'Role', 'Major', 'Age', 'Hobby', 'School')">
+                <img src="images/LaurenKeating.png">
                 <h4>Lauren Keating</h4>
                 <p>Frontend and Backend Developer</p>
             </div>
-            <div class="team-member">
+            <div class="team-member" onclick="showPopup('Name', 'Role', 'Major', 'Age', 'Hobby', 'School')">
                 <img src="images/GabbyRamirez.jpg">
                 <h4>Gabby Ramirez</h4>
                 <p>Web Developer</p>
             </div>
-            <div class="team-member">
+            <div class="team-member" onclick="showPopup('Name', 'Role', 'Major', 'Age', 'Hobby', 'School')">
                 <img src="./user.png">
                 <h4>John Doe</h4>
                 <p>Web Developer</p>
             </div>
-            <div class="team-member">
+            <div class="team-member" onclick="showPopup('Name', 'Role', 'Major', 'Age', 'Hobby', 'School')">
                 <img src="./user.png">
                 <h4>John Doe</h4>
                 <p>Web Developer</p>
             </div>
-            <div class="team-member">
+            <div class="team-member" onclick="showPopup('Name', 'Role', 'Major', 'Age', 'Hobby', 'School')">
                 <img src="./user.png">
                 <h4>John Doe</h4>
                 <p>Web Developer</p>
             </div>
-            <div class="team-member">
+            <div class="team-member" onclick="showPopup('Name', 'Role', 'Major', 'Age', 'Hobby', 'School')">
                 <img src="./user.png">
                 <h4>John Doe</h4>
                 <p>Web Developer</p>
             </div>
         </div>
     </div>
+
+    <div class="popup" id="popup">
+        <img id="popup-img" src="">
+        <h3 id="popup-name"></h3>
+        <p id="popup-role" class="popup-info"></p>
+        <p id="popup-major" class="popup-info"></p>
+        <p id="popup-age" class="popup-info"></p>
+        <p id="popup-hobby" class="popup-info"></p>
+        <p id="popup-education" class="popup-info"></p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
