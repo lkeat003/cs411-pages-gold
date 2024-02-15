@@ -18,7 +18,7 @@ Gabby Ramirez is a second-degree seeking student.  She earned her first degree i
 ### Kyle Munoz
 ![Image 4](image4-url-here)
 
-Bio goes here.
+Kyle Munoz grew up in Virginia Beach. He likes to listen to K-Pop, watch K-dramas, and watch sports. After graduation, he plans to pursue a career in web development.
 
 ### Erin Shanks
 ![Image 5](image5-url-here)
