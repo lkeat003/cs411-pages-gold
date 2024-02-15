@@ -11,7 +11,7 @@ body {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(#3f3f3f 0%, #181818 100%);
+    background: linear-gradient(#2e2e2e 0%, #969696 100%);
 }
 
 .main-container {
@@ -24,6 +24,13 @@ body {
 
 h2 {
     text-align: center;
+}
+h3 {
+    text-align: center;
+}
+h5 {
+    text-align: center;
+    color: #abad07;
 }
 
 hr {
@@ -48,13 +55,13 @@ hr {
 }
 
 img {
-    width: 130px;
-    height: 150px;
+    width: 140px;
+    height: 160px;
     border-radius: 50%;
     margin: 50px;
 }
 
-h4,
+
 p {
     text-align: center;
     font-size: 12px;
@@ -85,10 +92,13 @@ p {
 }
 
 .popup img {
-    width: 130px;
-    height: 150px;
+    display: block;
+    width: 150px;
+    height: 170px;
     border-radius: 50%;
-    margin: 60px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .popup button {
@@ -104,7 +114,9 @@ p {
     background-color: #0056b3;
 }
 .popup-info {
-    text-align: left;
-    margin-left: 10px; 
+    text-align: center;
+    max-width: 300px; 
+    word-wrap: break-word;
+    font-size: 18px; 
 }
 

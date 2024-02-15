@@ -1,33 +1,30 @@
-function showPopup(name, role, major, experience, hobby, education) {
+function showPopup(name, bio, email) {
     var jpgPath = 'images/' + name.replace(' ', '') + '.jpg';
     var pngPath = 'images/' + name.replace(' ', '') + '.png';
     var jpgImage = new Image();
     jpgImage.onload = function() {
         document.getElementById('popup-img').src = jpgPath;
-        showPopupContent(name, role, major, experience, hobby, education);
+        showPopupContent(name, bio, email);
     }
     jpgImage.onerror = function() {
         var pngImage = new Image();
         pngImage.onload = function() {
             document.getElementById('popup-img').src = pngPath;
-            showPopupContent(name, role, major, experience, hobby, education);
+            showPopupContent(name, bio, email);
         }
         pngImage.onerror = function() {
             document.getElementById('popup-img').src = 'images/default.jpg';
-            showPopupContent(name, role, major, experience, hobby, education);
+            showPopupContent(name, bio, email);
         }
         pngImage.src = pngPath;
     }
     jpgImage.src = jpgPath;
 }
 
-function showPopupContent(name, role, major, experience, hobby, education) {
+function showPopupContent(name, bio, email) {
     document.getElementById('popup-name').textContent = name;
-    document.getElementById('popup-role').textContent = 'Role: ' + role;
-    document.getElementById('popup-major').textContent = 'Major: ' + major;
-    document.getElementById('popup-age').textContent = 'Age: ' + experience;
-    document.getElementById('popup-hobby').textContent = 'Hobbies: ' + hobby;
-    document.getElementById('popup-education').textContent = 'Education: ' + education;
+    document.getElementById('popup-bio').textContent = ' ' + bio;
+    document.getElementById('popup-email').textContent = ' ' + email;
     document.getElementById('popup').style.display = 'block';
 }
 
