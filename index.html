@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Section</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="tabs">
+        <button onclick="openTab('home')" id="home-tab" class="tab-btn active">Home</button>
+        <button onclick="openTab('team')" id="team-tab" class="tab-btn">Meet the Team</button>
+        <button onclick="openTab('presentation')" id="presentation-tab" class="tab-btn">Presentation</button>
+        <button onclick="openTab('lab')" id="lab-tab" class="tab-btn">Lab</button>
+        <button onclick="openTab('glossary')" id="glossary-tab" class="tab-btn">Glossary</button>
+        <button onclick="openTab('references')" id="references-tab" class="tab-btn">References</button>
+        <button onclick="openTab('figure')" id="figure-tab" class="tab-btn">Figures</button>
+    </div>
+    
+    
+
+    <div id="home" class="tab-content">
+        <div class="main-container">
+            <h2>KNOWNTIME</h2>
+            <div class="image-container">
+                <img src="images/tomato.jpg" alt="Image">
+            </div>
+        </div>
+    </div>
+
+    <div id="team" class="tab-content" style="display: none;">
+        <div class="main-container">
+            <h2>Meet Team Gold Spring 2024</h2>
+            <hr>
+            <div class="members">
+                <div class="team-member" onclick="showPopup('Steven Chen', 'Steven Chen is a Senior Undergraduate student at Old Dominion University, majoring in Computer Science and minoring in Cybersecurity. In his free time, he enjoys playing table tennis and video games.', 'schen012@odu.edu')">
+                    <img src="images/StevenChen.jpg">
+                    <h3>Steven Chen</h3>
+                    <h5>Click for Bio</h5>
+                    <p>Full Stack Developer</p>
+                </div>
+                <div class="team-member" onclick="showPopup('Lauren Keating', 'Lauren is an experienced frontend and backend developer with a passion for coding. In her free time she enjoys reading, coding, and gaming.', 'lkeat003@odu.edu')">
+                    <img src="images/LaurenKeating.png">
+                    <h3>Lauren Keating</h3>
+                    <h5>Click for Bio</h5>
+                    <p>Frontend and Backend Developer</p>
+                </div>
+                <div class="team-member" onclick="showPopup('Gabby Ramirez', 'Gabby Ramirez is a second-degree seeking student.  She earned her first degree in Psychology at the College of William & Mary.  She has interned as a Computer Scientist with the government and has worked in the automotive industry for seven years.  Upon graduation, Gabby hopes to make a career change soon after.  When she has time, her hobbies include playing video games, building and painting models, and spending time with her fur babies and husband.', 'grami002@odu.edu')">
+                    <img src="images/GabbyRamirez.jpg">
+                    <h3>Gabby Ramirez</h3>
+                    <h5>Click for Bio</h5>
+                    <p>Web Developer</p>
+                </div>
+                <div class="team-member" onclick="showPopup('Erin Shanks', 'Erin Shanks is a senior at Old Dominion University. In her free time she enjoys playing video games and reading.', 'eshan003@odu.edu')">
+                    <img src="images/ErinShanks.jpg">
+                    <h3>Erin Shanks</h3>
+                    <h5>Click for Bio</h5>
+                    <p>Frontend and Backend Developer</p>
+                </div>
+                <div class="team-member" onclick="showPopup('Kyle Munoz', 'Kyle Munoz grew up in Virginia Beach. He likes to listen to K-Pop, watch K-dramas, and watch sports. After graduation, he plans to pursue a career in web development.', 'kmuno003@odu.edu')">
+                    <img src="images/KyleMunoz.jpg">
+                    <h3>Kyle Munoz</h3>
+                    <h5>Click for Bio</h5>
+                    <p>Web Developer</p>
+                </div>
+                <div class="team-member" onclick="showPopup('Angel Mercado', 'Angel is a senior at Old Dominion University. He plans to pursue a career as a software engineer upon graduation. In his free time, he enjoys reading, lifting, mixed martial arts, and gaming', 'amerc006@odu.edu')">
+                    <img src="images/AngelMercado.jpg">
+                    <h3>Angel Mercado</h3>
+                    <h5>Click for Bio</h5>
+                    <p>Web Developer</p>
+                </div>
+                <div class="team-member" onclick="showPopup('Reggie Pinder', 'Reggie is a senior at Old Domionion University. He works full-time as a Programmer Analyst contractor and does school work part-time. In his free time he spends time with his lovely wife and 2 kids, playing video games, and grilling.', 'rpind002@odu.edu')">
+                    <img src="images/ReggiePinder.png">
+                    <h3>Reggie Pinder</h3>
+                    <h5>Click for Bio</h5>
+                    <p>Web Developer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="figure" class="tab-content" style="display: none;">
+        <div class="main-container">
+            <h2>Figures</h2>
+            <div class="figure1">
+                <div class="cpf-section">
+                    <h3>Current Process Flow: Assignment Tracking</h3>
+                    <img src="images/CurrentProcessFlow.png" alt="Assignment Tracking Figure">
+                </div>
+                <div class="cpf-section">
+                    <h3>Current Process Flow:  Performance Feedback</h3>
+                    <img src="images/PerformanceFeedback.png" alt="Performance Feedback Figure">
+                </div>
+            </div>
+            
+            <div class="figure2">
+                <div class="spf-section">
+                    <h3>Solution Process Flow</h3>
+                    <img src="images/SPF.png" alt="Assignment Tracking Figure">
+                </div>
+            </div>
+            <div class="figure">
+                <h3>Competition Matrix</h3>
+                <!-- Insert your Competition Matrix figure here -->
+                <img src="images/CMFigures.PNG" alt="Competition Matrix Figure">
+            </div>
+            <div class="figure">
+                <h3>MFCD</h3>
+                <!-- Insert your MFCD figure here -->
+                <img src="images/MFCD.png" alt="MFCD Figure">
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="presentation" class="tab-content" style="display: none;">
+        <div class="iframe-container">
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQbeiKA3CxRrYcyYK_3Vd_LqE3vD9Gy5BFJKrFTXE-rLQulOHHeiXFs-yoWUhWyycJInuuvgbMm81Fz/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+    </div>
+
+    <div id="lab" class="tab-content" style="display: none;">
+        <div class="main-container">
+            <div class="iframe-container">
+                <iframe src="https://olddominion-my.sharepoint.com/personal/grami002_odu_edu/_layouts/15/Doc.aspx?sourcedoc={4c4c1c48-4f41-48b9-aeb8-53faf0be2e4d}&action=embedview" width="787px" height="476px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+            </div>
+        </div>
+    </div>
+    <div id="references" class="tab-content" style="display: none;">
+        <div class="main-container">
+            <h2>References</h2>
+            <div class="reference-container">
+                <div class="reference-box">
+                    <p>
+                        Ariella, S. (2022, November 14). 22 Time Management Statistics [2022] – Zippia. Zippia. Retrieved from <a href="https://www.zippia.com/advice/time-management-statistics/">https://www.zippia.com/advice/time-management-statistics/</a>
+                    </p>
+                </div>
+                <div class="reference-box">
+                    <p>
+                        Evernote. (2019). Best Note Taking App | Organize Your Notes with Evernote. Retrieved February 13, 2024, from Evernote website: <a href="https://evernote.com/">https://evernote.com/</a>
+                    </p>
+                </div>
+                <div class="reference-box">
+                    <p>
+                        Forest. (2016). Forest. Retrieved February 13, 2024, from Forestapp.cc website: <a href="https://www.forestapp.cc/">https://www.forestapp.cc/</a>
+                    </p>
+                </div>
+                <div class="reference-box">
+                    <p>
+                        iStudiez Team. (n.d.). iStudiez Pro for iOS - Best App for Students. Retrieved February 13, 2024, from istudentpro.com website: <a href="https://istudentpro.com/">https://istudentpro.com/</a>
+                    </p>
+                </div>
+                <div class="reference-box">
+                    <p>
+                        Kennedy, T. (n.d.). Support. Www.cs.odu.edu. Retrieved February 20, 2024, from <a href="https://www.cs.odu.edu/~tkennedy/cs410/latest/Public/support/">https://www.cs.odu.edu/~tkennedy/cs410/latest/Public/support/</a>
+                    </p>
+                </div>
+                <div class="reference-box">
+                    <p>
+                        MyStudyLife. (2021, March 27). My Study Life- Online Student Planner. Retrieved February 13, 2024, from MyStudyLife website: <a href="https://mystudylife.com/">https://mystudylife.com/</a>
+                    </p>
+                </div>
+                <div class="reference-box">
+                    <p>
+                        Notion. (2019). Notion – The all-in-one workspace for your notes, tasks, wikis, and databases. Retrieved February 13, 2024, from Notion website: <a href="https://www.notion.so/">https://www.notion.so/</a>
+                    </p>
+                </div>
+                <div class="reference-box">
+                    <p>
+                        Remember The Milk Inc. (2020). Remember The Milk: Online to-do list and task management. Retrieved February 13, 2024, from Rememberthemilk.com website: <a href="https://www.rememberthemilk.com/">https://www.rememberthemilk.com/</a>
+                    </p>
+                </div>
+                <div class="reference-box">
+                    <p>
+                        Scroggs, L. (2022). The Pomodoro Technique – Why It Works & How To Do It. Retrieved February 14, 2024, from Todoist website: <a href="https://todoist.com/productivity-methods/pomodoro-technique">https://todoist.com/productivity-methods/pomodoro-technique</a>
+                    </p>
+                </div>
+                <div class="reference-box">
+                    <p>
+                        Where has the time gone? (n.d.). Retrieved February 27, 2024, from College Success Plan website: <a href="https://collegesuccessplan.com/blog/where-has-the-time-gone">https://collegesuccessplan.com/blog/where-has-the-time-gone</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="glossary" class="tab-content" style="display: none;">
+        <div class="main-container">
+            <h2>Glossary</h2>
+            <div class="term-container">
+                <div class="term">
+                <h3>Grade Tracker</h3>
+                <p>Grade tracking will be based on user-inputted grades. It will look at their grades, and the time spent studying, which may be entered by the student or automatically generated if the task was completed during a study session within the website. It will then generate a graph correlating time spent studying with the grade they received. They will also be able to filter this graph by tags. This will allow students to view a particular class to determine how they can improve. The student will set a goal for the grade and view how they are progressing over time.</p>
+            </div>
+            <div class="term">
+                <h3>Pomodoro Timer</h3>
+                <p>The Pomodoro timer technique was created by Francesco Cirillo in the 1980s while he was a university student. To follow this technique, the student sets a timer for 25 minutes to complete a task. Once the timer goes off, the student takes a 5-minute break and then continues to work again for another 25 mins. After four sessions, the student takes a 15–30-minute break (Scroggs, 2022).</p>
+            </div>
+            <div class="term">
+                <h3>Study Plan</h3>
+                <p>A study plan will be generated based on various factors that will be entered by the student. Examples of information entered that will be considered are assignment due dates, exam dates, and times that the student has specified they are busy. Study plans also consider time spent on similarly tagged tasks and the need for breaks between tasks.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="popup" id="popup">
+                <img id="popup-img" src="">
+        <h3 id="popup-name"></h3>
+        <p id="popup-bio" class="popup-info"></p>
+        <p id="popup-email" class="popup-info"></p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function openTab(tabName) {
+            var i;
+            var tabs = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+
+        window.onload = function() {
+            openTab('home');
+        };
+    </script>
+</body>
+</html>

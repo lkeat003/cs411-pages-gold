@@ -31,3 +31,26 @@ function showPopupContent(name, bio, email) {
 function closePopup() {
     document.getElementById('popup').style.display = 'none';
 }
+
+
+function openTab(tabName) {
+    var i;
+    var tabs = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabs.length; i++) {
+        tabs[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+
+    var activeTabs = document.getElementsByClassName("active");
+    for (i = 0; i < activeTabs.length; i++) {
+        activeTabs[i].classList.remove("active");
+    }
+    document.getElementById(tabName + "-tab").classList.add("active");
+}
+
+window.onload = function() {
+    openTab('home');
+};
+
+
+
