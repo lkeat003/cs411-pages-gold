@@ -247,3 +247,19 @@ body {
     display: block; /* Ensure the image is centered */
     margin: 0 auto; /* Center the image horizontally */
 }
+#footer-links {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9; /* Background color of the footer */
+    padding: 10px 0; /* Adjust padding as needed */
+    text-align: center;
+    font-size: 12px;
+}
+
+#footer-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
