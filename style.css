@@ -204,10 +204,12 @@ body {
 .term p {
     margin: 0;
     text-align: left;
+    font-size: 35px; /* Adjust the font size as needed */
 }
 .term h3{
     margin: 0;
     text-align: left;
+    font-size: 35px; /* Adjust the font size as needed */
 }
 
 .figure1 {
