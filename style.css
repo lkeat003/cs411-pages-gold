@@ -54,6 +54,7 @@ body {
 
 .tab-content {
     display: none;
+    text-align: center;
 }
 
 .main-container {
@@ -74,8 +75,9 @@ body {
 
 
 .team-member {
+    flex: 1 1 calc(33.333% - 20px);
     text-align: center;
-    margin: 20px;
+    margin: 10px;
     transition: transform 0.3s ease; /* Add transition property */
 }
 
