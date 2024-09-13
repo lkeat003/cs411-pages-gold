@@ -102,20 +102,13 @@ body {
     color: white; /* Change text color to white */
 }
 
-.lab-heading h1 {
-    font-size: 24px; 
-}
-
-.lab-heading h2 {
-    font-size: 20px; 
-}
-
-.lab-heading h3 {
-    font-size: 15px; 
-}
-
 .main-container {
     margin: 20px;
+}
+
+.main-container h1 {
+    margin: 24px;
+    color: white;
 }
 
 .main-container h2 {
@@ -123,7 +116,14 @@ body {
     color: white;
 }
 
+.main-container h3 {
+    margin: 15px;
+    color: white;
+}
+
 .members {
+    height: 500px; /* Adjust the height as needed */
+    overflow-y: auto; /* Allow scrolling if content overflows */
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Horizontally center the items */
@@ -234,13 +234,13 @@ body {
 .team-member {
     flex: 1 1 calc(33.333% - 20px);
     text-align: center;
-    margin: 10px;
+    margin: 5px;
     transition: transform 0.3s ease; /* Add transition property */
 }
 
 .team-member img {
-    width: 150px; /* Adjust the width as needed */
-    height: 150px; /* Adjust the height as needed */
+    width: 125px; /* Adjust the width as needed */
+    height: 125px; /* Adjust the height as needed */
     object-fit: cover;
     border-radius: 50%;
 }
