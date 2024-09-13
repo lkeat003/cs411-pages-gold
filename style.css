@@ -8,13 +8,83 @@ body {
     background: #888888
 }
 
+.cpf-section {
+    width: 50%; /* Equal width for both sections */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 0 10px; /* Adjust padding as needed */
+}
 
+.cpf-section h3 {
+    font-size: 18px; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.cpf-section img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.figure1 {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.figure2 {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.figure2 h3 {
+    margin-bottom: 10px; /* Spacing below the heading */
+}
+
+.figure2 img {
+    max-width: 80%; /* Adjust the percentage as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image is centered */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+#footer-links {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9; /* Background color of the footer */
+    padding: 10px 0; /* Adjust padding as needed */
+    text-align: center;
+    font-size: 12px;
+}
+
+#footer-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
 
 .header {
     background-color: #d8d8d8;
     padding: 10px;
 }
 
+.iframe-container {
+    position: relative;
+    width: 80%; /* Adjust width as needed */
+    height: 0;
+    padding-bottom: 45%; /* Adjust height ratio as needed */
+    margin: auto; /* Center the container horizontally */
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove border */
+}
 
 .image-container {
     display: flex;
@@ -27,34 +97,21 @@ body {
     border: 3px solid #000; /* Add a border around the image */
 }
 
-
-.tabs {
-    display: flex;
-    justify-content: center;
+.lab-heading {
+    text-align: center; /* Center align text */
+    color: white; /* Change text color to white */
 }
 
-.tabs button {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: #fff;
-    cursor: pointer;
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-weight: bold; /* Make the tab text bold */
+.lab-heading h1 {
+    font-size: 24px; 
 }
 
-
-
-/* Hover effect for the tabs */
-.tab-btn:hover {
-    background-color: rgba(247, 239, 239, 0.2);
+.lab-heading h2 {
+    font-size: 20px; 
 }
 
-
-.tab-content {
-    display: none;
-    text-align: center;
+.lab-heading h3 {
+    font-size: 12px; 
 }
 
 .main-container {
@@ -72,26 +129,6 @@ body {
     justify-content: center; /* Horizontally center the items */
     align-items: center; /* Vertically center the items */
 }
-
-
-.team-member {
-    flex: 1 1 calc(33.333% - 20px);
-    text-align: center;
-    margin: 10px;
-    transition: transform 0.3s ease; /* Add transition property */
-}
-
-.team-member img {
-    width: 150px; /* Adjust the width as needed */
-    height: 150px; /* Adjust the height as needed */
-    object-fit: cover;
-    border-radius: 50%;
-}
-.team-member:hover {
-    transform: scale(1.1); /* Make the team member 10% larger on hover */
-}
-
-
 
 .popup {
     position: fixed;
@@ -149,27 +186,6 @@ body {
     color: #cecece; /* Hover text color */
 }
 
-.tab-content {
-    text-align: center;
-}
-
-.iframe-container {
-    position: relative;
-    width: 80%; /* Adjust width as needed */
-    height: 0;
-    padding-bottom: 45%; /* Adjust height ratio as needed */
-    margin: auto; /* Center the container horizontally */
-}
-
-.iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none; /* Remove border */
-}
-
 .reference-container {
     display: flex;
     flex-direction: column;
@@ -187,6 +203,54 @@ body {
 .reference-box p {
     margin: 0;
     text-align: left;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.tabs button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: bold; /* Make the tab text bold */
+}
+
+/* Hover effect for the tabs */
+.tab-btn:hover {
+    background-color: rgba(247, 239, 239, 0.2);
+}
+
+.tab-content {
+    display: none;
+    text-align: center;
+}
+
+.team-member {
+    flex: 1 1 calc(33.333% - 20px);
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.3s ease; /* Add transition property */
+}
+
+.team-member img {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team-member:hover {
+    transform: scale(1.1); /* Make the team member 10% larger on hover */
+}
+
+.tab-content {
+    text-align: center;
 }
 
 .term-container {
@@ -212,58 +276,4 @@ body {
     margin: 0;
     text-align: left;
     font-size: 35px; /* Adjust the font size as needed */
-}
-
-.figure1 {
-    display: flex;
-    justify-content: space-between; /* Distribute items evenly */
-    margin-bottom: 20px; /* Adjust margin as needed */
-}
-
-.cpf-section {
-    width: 50%; /* Equal width for both sections */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    padding: 0 10px; /* Adjust padding as needed */
-}
-
-.cpf-section h3 {
-    font-size: 18px; /* Adjust font size as needed */
-    margin-bottom: 10px; /* Adjust margin as needed */
-}
-
-.cpf-section img {
-    max-width: 100%; /* Ensure images don't exceed container width */
-    height: auto; /* Maintain aspect ratio */
-}
-.figure2 {
-    display: flex;
-    justify-content: space-between; /* Distribute items evenly */
-    margin-bottom: 20px; /* Adjust margin as needed */
-}
-
-.figure2 h3 {
-    margin-bottom: 10px; /* Spacing below the heading */
-}
-
-.figure2 img {
-    max-width: 80%; /* Adjust the percentage as needed */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure the image is centered */
-    margin: 0 auto; /* Center the image horizontally */
-}
-#footer-links {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f9f9f9; /* Background color of the footer */
-    padding: 10px 0; /* Adjust padding as needed */
-    text-align: center;
-    font-size: 12px;
-}
-
-#footer-links a {
-    color: #333;
-    text-decoration: none;
-    margin: 0 10px;
 }
